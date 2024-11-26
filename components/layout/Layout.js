@@ -15,13 +15,13 @@ export default function Layout({ headTitle, breadcrumbTitle, breadcrumbActive, c
         !isToggled ? document.body.classList.add("mobile-menu-active") : document.body.classList.remove("mobile-menu-active");
     };
 
-    useEffect(() => {
-        const WOW = require('wowjs');
-        window.wow = new WOW.WOW({
-            live: false
-        });
-        window.wow.init();
-    })
+    // useEffect(() => {
+    //     const WOW = require('wowjs');
+    //     window.wow = new WOW.WOW({
+    //         live: false
+    //     });
+    //     window.wow.init();
+    // })
     return (
         <>
             <PageHead headTitle={headTitle} />

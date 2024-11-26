@@ -26,10 +26,15 @@ export default function Sidebar() {
                         </li>
                         <li> <Link className={router.pathname == "/recruiters" ? "dashboard2 active" : "dashboard2"} href="/recruiters"><img src="assets/imgs/page/dashboard/recruiters.svg" alt="jobBox" /><span className="name">Jobs Shortlist</span></Link>
                         </li>
+                        <li> <Link className={router.pathname == "/fol-emp" ? "dashboard2 active" : "dashboard2"} href="/fol-emp"><img src="assets/imgs/page/dashboard/recruiters.svg" alt="jobBox" /><span className="name">Following Employers</span></Link>
+                        </li>
                         
                         <li> <Link className={router.pathname == "/my-tasks-list" ? "dashboard2 active" : "dashboard2"} href="/my-tasks-list"><img src="assets/imgs/page/dashboard/tasks.svg" alt="jobBox" /><span className="name">Job Alerts</span></Link>
                         </li>
                           <li> <Link className={router.pathname == "/candidates" ? "dashboard2 active" : "dashboard2"} href="/candidates"><img src="assets/imgs/page/dashboard/candidates.svg" alt="jobBox" /><span className="name">Recruiters</span></Link>
+                        </li>
+
+                        <li> <Link className={router.pathname == "/meetings" ? "dashboard2 active" : "dashboard2"} href="/meetings"><img src="assets/imgs/page/dashboard/candidates.svg" alt="jobBox" /><span className="name">Meetings</span></Link>
                         </li>
                        
                         <li> <Link className={router.pathname == "/settings" ? "dashboard2 active" : "dashboard2"} href="/settings"><img src="assets/imgs/page/dashboard/settings.svg" alt="jobBox" /><span className="name">Setting</span></Link>

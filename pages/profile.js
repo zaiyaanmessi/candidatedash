@@ -10,7 +10,7 @@ export default function Home() {
                         <div className="container">
                             <div className="panel-white mb-30">
                             <div className="box-padding">
-                                <h6 className="color-text-paragraph-2">Update your profile</h6>
+                                <h6 className="color-text-paragraph-2">General</h6>
                                 <div className="box-profile-image">
                                 <div className="img-profile">
 
@@ -21,15 +21,15 @@ export default function Home() {
                                 </div>
                                 <div className="info-profile">
 
-                                    <a className="btn btn-default">Upload Avatar</a>
+                                    <a className="btn btn-default">Browse</a>
                                     <a className="btn btn-link">Delete</a>
                                 </div>
                                 </div>
                                 <div className="row">
                                 <div className="col-lg-6 col-md-6">
                                     <div className="form-group mb-30">
-                                    <label className="font-sm color-text-mutted mb-10">
-                                        Full Name *
+                                    <label className="font-sm  mb-10">
+                                        Full Name 
                                     </label>
                                     <input
                                         className="form-control"
@@ -40,8 +40,8 @@ export default function Home() {
                                 </div>
                                 <div className="col-lg-6 col-md-6">
                                     <div className="form-group mb-30">
-                                    <label className="font-sm color-text-mutted mb-10">
-                                        Email *
+                                    <label className="font-sm  mb-10">
+                                        Email 
                                     </label>
                                     <input
                                         className="form-control"
@@ -52,7 +52,7 @@ export default function Home() {
                                 </div>
                                 <div className="col-lg-6 col-md-6">
                                     <div className="form-group mb-30">
-                                    <label className="font-sm color-text-mutted mb-10">
+                                    <label className="font-sm text-black mb-10">
                                         Contact number
                                     </label>
                                     <input
@@ -64,7 +64,7 @@ export default function Home() {
                                 </div>
                                 <div className="col-lg-6 col-md-6">
                                     <div className="form-group mb-30">
-                                    <label className="font-sm color-text-mutted mb-10">
+                                    <label className="font-sm  mb-10">
                                         Personal website
                                     </label>
                                     <input
@@ -74,9 +74,137 @@ export default function Home() {
                                     />
                                     </div>
                                 </div>
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="form-group mb-30">
+                                    <label className="font-sm  mb-10">
+                                        Gender
+                                    </label>
+                                    <select className="form-control">
+                                        <option value="">Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="form-group mb-30">
+                                    <label className="font-sm  mb-10">
+                                        Age
+                                    </label>
+                                    <input
+                                        className="form-control"
+                                        type="number"
+                                        placeholder="Enter your age"
+                                        min="18"
+                                        max="100"
+                                    />
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="form-group mb-30">
+                                    <label className="font-sm  mb-10">
+                                        Salary Type
+                                    </label>
+                                    <select className="form-control">
+                                        <option value="">Select Salary Type</option>
+                                        <option value="hourly">Hourly</option>
+                                        <option value="monthly">Monthly</option>
+                                        <option value="yearly">Yearly</option>
+                                        <option value="contract">Contract</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="form-group mb-30">
+                                    <label className="font-sm  mb-10">
+                                        Salary Range
+                                    </label>
+                                    <input
+                                        className="form-control"
+                                        type="text"
+                                        placeholder="Enter salary range"
+                                    />
+                                    </div>
+                                </div>
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="form-group mb-30">
+                                    <label className="font-sm  mb-10">
+                                        Qualification
+                                    </label>
+                                    <select className="form-control">
+                                        <option value="">Select Qualification</option>
+                                        <option value="highschool">High School</option>
+                                        <option value="associate">Associate Degree</option>
+                                        <option value="bachelors">Bachelor's Degree</option>
+                                        <option value="masters">Master's Degree</option>
+                                        <option value="phd">PhD</option>
+                                        <option value="professional">Professional Certification</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="form-group mb-30">
+                                    <label className="font-sm  mb-10">
+                                        Total Experience
+                                    </label>
+                                    <select className="form-control">
+                                        <option value="">Select Experience</option>
+                                        <option value="0-1">0-1 Years</option>
+                                        <option value="1-2">1-2 Years</option>
+                                        <option value="2-3">2-3 Years</option>
+                                        <option value="3-5">3-5 Years</option>
+                                        <option value="5-10">5-10 Years</option>
+                                        <option value="10+">10+ Years</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="form-group mb-30">
+                                    <label className="font-sm  mb-10">
+                                        Categories
+                                    </label>
+                                    <select className="form-control">
+                                        <option value="">Select Categories</option>
+                                        <option value="uiux">UI/UX Designer</option>
+                                        <option value="frontend">Frontend Developer</option>
+                                        <option value="backend">Backend Developer</option>
+                                        <option value="fullstack">Full Stack Developer</option>
+                                        <option value="datascience">Data Scientist</option>
+                                        <option value="productmanager">Product Manager</option>
+                                        <option value="marketing">Marketing Specialist</option>
+                                        <option value="sales">Sales Representative</option>
+                                        <option value="hr">Human Resources</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    </div>
+                                </div>
+                                <div className="col-lg-6 col-md-6">
+                                    <div className="form-group mb-30">
+                                    <label className="font-sm  mb-10">
+                                        Languages
+                                    </label>
+                                    <select className="form-control">
+                                        <option value="">Select Languages</option>
+                                        <option value="english">English</option>
+                                        <option value="spanish">Spanish</option>
+                                        <option value="french">French</option>
+                                        <option value="german">German</option>
+                                        <option value="mandarin">Mandarin</option>
+                                        <option value="arabic">Arabic</option>
+                                        <option value="hindi">Hindi</option>
+                                        <option value="portuguese">Portuguese</option>
+                                        <option value="russian">Russian</option>
+                                        <option value="japanese">Japanese</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    </div>
+                                </div>
+
                                 <div className="col-lg-12">
                                     <div className="form-group mb-30">
-                                    <label className="font-sm color-text-mutted mb-10">Bio</label>
+                                    <label className="font-sm  mb-10">About Me</label>
                                     <textarea
                                         className="form-control"
                                         name="message"
@@ -87,7 +215,104 @@ export default function Home() {
                                     />
                                     </div>
                                 </div>
-                                <div className="col-lg-6 col-md-6">
+                                <div className="col-lg-12">
+                                    <div className="form-group mb-30">
+                                    <label className="font-sm  mb-10">
+                                        Social Network 1
+                                    </label>
+                                    <div className="row">
+                                        <div className="col-lg-6 col-md-6">
+                                            <input
+                                                className="form-control mb-10"
+                                                type="text"
+                                                placeholder="Network Name"
+                                            />
+                                        </div>
+                                        <div className="col-lg-6 col-md-6">
+                                            <input
+                                                className="form-control"
+                                                type="text"
+                                                placeholder="Profile URL"
+                                            />
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-12">
+                                    <div className="form-group mb-30">
+                                    <label className="font-sm  mb-10">
+                                        Social Network 2
+                                    </label>
+                                    <div className="row">
+                                        <div className="col-lg-6 col-md-6">
+                                            <input
+                                                className="form-control mb-10"
+                                                type="text"
+                                                placeholder="Network Name"
+                                            />
+                                        </div>
+                                        <div className="col-lg-6 col-md-6">
+                                            <input
+                                                className="form-control"
+                                                type="text"
+                                                placeholder="Profile URL"
+                                            />
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-12">
+                                    <div className="form-group mb-30">
+                                    <label className="font-sm  mb-10">
+                                        Social Network 3
+                                    </label>
+                                    <div className="row">
+                                        <div className="col-lg-6 col-md-6">
+                                            <input
+                                                className="form-control mb-10"
+                                                type="text"
+                                                placeholder="Network Name"
+                                            />
+                                        </div>
+                                        <div className="col-lg-6 col-md-6">
+                                            <input
+                                                className="form-control"
+                                                type="text"
+                                                placeholder="Profile URL"
+                                            />
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                <div className="col-lg-12">
+                                    <div className="form-group mb-30">
+                                    <label className="font-sm  mb-10">
+                                        Social Network 4
+                                    </label>
+                                    <div className="row">
+                                        <div className="col-lg-6 col-md-6">
+                                            <input
+                                                className="form-control mb-10"
+                                                type="text"
+                                                placeholder="Network Name"
+                                            />
+                                        </div>
+                                        <div className="col-lg-6 col-md-6">
+                                            <input
+                                                className="form-control"
+                                                type="text"
+                                                placeholder="Profile URL"
+                                            />
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+
+
+                                {/* <div className="col-lg-6 col-md-6">
                                     <div className="form-group mb-30">
                                     <label className="font-sm color-text-mutted mb-10">
                                         Experience
@@ -98,8 +323,8 @@ export default function Home() {
                                         placeholder="1 - 5 Years"
                                     />
                                     </div>
-                                </div>
-                                <div className="col-lg-6 col-md-6">
+                                </div> */}
+                                {/* <div className="col-lg-6 col-md-6">
                                     <div className="form-group mb-30">
                                     <label className="font-sm color-text-mutted mb-10">
                                         Education Levels
@@ -110,8 +335,8 @@ export default function Home() {
                                         placeholder="Certificate"
                                     />
                                     </div>
-                                </div>
-                                <div className="col-lg-6 col-md-6">
+                                </div> */}
+                                {/* <div className="col-lg-6 col-md-6">
                                     <div className="form-group mb-30">
                                     <label className="font-sm color-text-mutted mb-10">
                                         Languages
@@ -122,8 +347,8 @@ export default function Home() {
                                         placeholder="English, French"
                                     />
                                     </div>
-                                </div>
-                                <div className="col-lg-6 col-md-6">
+                                </div> */}
+                                {/* <div className="col-lg-6 col-md-6">
                                     <div className="form-group mb-30">
                                     <label className="font-sm color-text-mutted mb-10">
                                         Categories
@@ -133,9 +358,9 @@ export default function Home() {
                                         type="text"
                                         placeholder="UI/UX designer"
                                     />
-                                    </div>
-                                </div>
-                                <div className="col-lg-6 col-md-6">
+                                    </div> */}
+                                {/* </div> */}
+                                {/* <div className="col-lg-6 col-md-6">
                                     <div className="form-group mb-30">
                                     <label className="font-sm color-text-mutted mb-10">
                                         Current Salary($)
@@ -146,8 +371,8 @@ export default function Home() {
                                         placeholder="$2500"
                                     />
                                     </div>
-                                </div>
-                                <div className="col-lg-6 col-md-6">
+                                </div> */}
+                                {/* <div className="col-lg-6 col-md-6">
                                     <div className="form-group mb-30">
                                     <label className="font-sm color-text-mutted mb-10">
                                         Expected Salary($)
@@ -158,14 +383,14 @@ export default function Home() {
                                         placeholder="$3500"
                                     />
                                     </div>
-                                </div>
-                                <div className="col-lg-12">
+                                </div> */}
+                                {/* <div className="col-lg-12">
                                     <div className="form-group mt-10">
                                     <button className="btn btn-default btn-brand icon-tick">
                                         Save Change
                                     </button>
                                     </div>
-                                </div>
+                                </div> */}
                                 </div>
                             </div>
                             </div>
@@ -175,7 +400,7 @@ export default function Home() {
                                 <div className="row mt-30">
                                 <div className="col-lg-6 col-md-6">
                                     <div className="form-group mb-30">
-                                    <label className="font-sm color-text-mutted mb-10">
+                                    <label className="font-sm  mb-10">
                                         Country
                                     </label>
                                     <input
@@ -187,7 +412,7 @@ export default function Home() {
                                 </div>
                                 <div className="col-lg-6 col-md-6">
                                     <div className="form-group mb-30">
-                                    <label className="font-sm color-text-mutted mb-10">
+                                    <label className="font-sm  mb-10">
                                         City
                                     </label>
                                     <input
@@ -199,7 +424,7 @@ export default function Home() {
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="form-group mb-30">
-                                    <label className="font-sm color-text-mutted mb-10">
+                                    <label className="font-sm  mb-10">
                                         Complete Address
                                     </label>
                                     <input
@@ -211,7 +436,7 @@ export default function Home() {
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="form-group mb-30">
-                                    <label className="font-sm color-text-mutted mb-10">
+                                    <label className="font-sm  mb-10">
                                         Find On Map
                                     </label>
                                     <input
@@ -223,7 +448,7 @@ export default function Home() {
                                 </div>
                                 <div className="col-lg-6 col-md-6">
                                     <div className="form-group mb-30">
-                                    <label className="font-sm color-text-mutted mb-10">
+                                    <label className="font-sm  mb-10">
                                         Latitude
                                     </label>
                                     <input
@@ -235,7 +460,7 @@ export default function Home() {
                                 </div>
                                 <div className="col-lg-6 col-md-6">
                                     <div className="form-group mb-30">
-                                    <label className="font-sm color-text-mutted mb-10">
+                                    <label className="font-sm  mb-10">
                                         Longitude
                                     </label>
                                     <input
@@ -247,7 +472,7 @@ export default function Home() {
                                 </div>
                                 <div className="col-lg-12">
                                     <div className="form-group mb-30">
-                                    <label className="font-sm color-text-mutted mb-10">
+                                    <label className="font-sm mb-10">
                                         Google Map
                                     </label>
                                     <div className="box-map">
@@ -462,3 +687,4 @@ export default function Home() {
         </>
     )
 }
+
