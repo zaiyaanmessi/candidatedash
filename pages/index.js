@@ -13,13 +13,16 @@ export default function Home() {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        // Check for demo credentials
-        if (email === 'demo' && password === '1234') {
-            // Successful login
+        // Check for demo and candidate credentials
+        if (email === 'candidate' && password === '1234') {
+            // Successful demo login
             router.push('/dashboar');
+        } else if (email === 'employer' && password === '5678') {
+            // Successful candidate login
+            router.push('/EmpDashboar');
         } else {
             // Failed login
-            setMessage('Invalid credentials. Try demo/1234');
+            setMessage('Invalid credentials. Try candidate/1234 or employer/5678');
         }
     };
 
