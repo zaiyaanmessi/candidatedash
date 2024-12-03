@@ -1,9 +1,11 @@
 import { Menu } from '@headlessui/react'
 import Link from "next/link"
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 
 export default function Header() {
     const [scroll, setScroll] = useState(0)
+    const router = useRouter()
 
     useEffect(() => {
         document.addEventListener("scroll", () => {
@@ -31,15 +33,13 @@ export default function Header() {
                             </Link>
                         </div>
                         <div className="header-search">
-                            {/* Uncomment and implement search functionality if needed */}
+                            {/* Search functionality placeholder */}
                         </div>
 
-                        {/* Center-align the dropdowns container */}
                         <div className="header-menu d-none d-md-flex" style={{ display: 'flex', justifyContent: 'center', gap: '30px' }}>
-                            {/* First Super Admin Dropdown */}
                             <Menu as="div" className="dropdown">
                                 <Menu.Button as="a" className="font-xs icon-down" style={{ display: 'flex', flexDirection: 'row' }}>
-                                    <span style={{ marginLeft: '5px',fontWeight: 'bold',fontSize: '16px'  }}>Homes</span>
+                                    <span style={{ marginLeft: '5px', fontWeight: 'bold', fontSize: '16px'  }}>Homes</span>
                                 </Menu.Button>
                                 <Menu.Items as="ul" className="dropdown-menu dropdown-menu-light dropdown-menu-end show" style={{ right: "0", left: "auto" }}>
                                     <li><Link className="dropdown-item" href="/profile">Profiles</Link></li>
@@ -48,10 +48,9 @@ export default function Header() {
                                 </Menu.Items>
                             </Menu>
 
-                            {/* Second Super Admin Dropdown */}
                             <Menu as="div" className="dropdown">
                                 <Menu.Button as="a" className="font-xs icon-down" style={{ display: 'flex', flexDirection: 'row' }}>
-                                    <span style={{ marginLeft: '5px',fontWeight: 'bold',fontSize: '16px' }}>Find</span><span style={{ marginLeft: '5px',fontWeight: 'bold',fontSize: '16px' }}>Job</span>
+                                    <span style={{ marginLeft: '5px', fontWeight: 'bold', fontSize: '16px' }}>Find Job</span>
                                 </Menu.Button>
                                 <Menu.Items as="ul" className="dropdown-menu dropdown-menu-light dropdown-menu-end show" style={{ right: "0", left: "auto" }}>
                                     <li><Link className="dropdown-item" href="/profile">Profiles</Link></li>
@@ -60,10 +59,9 @@ export default function Header() {
                                 </Menu.Items>
                             </Menu>
 
-                            {/* Third Super Admin Dropdown */}
                             <Menu as="div" className="dropdown">
-                                <Menu.Button as="a" className="font-xs icon-down" style={{ display: 'flex', flexDirection: 'row',fontWeight: 'bold',}}>
-                                    <span style={{ marginLeft: '5px',fontWeight: 'bold',fontSize: '16px'  }}>Employers</span>
+                                <Menu.Button as="a" className="font-xs icon-down" style={{ display: 'flex', flexDirection: 'row', fontWeight: 'bold' }}>
+                                    <span style={{ marginLeft: '5px', fontWeight: 'bold', fontSize: '16px'  }}>Candidates</span>
                                 </Menu.Button>
                                 <Menu.Items as="ul" className="dropdown-menu dropdown-menu-light dropdown-menu-end show" style={{ right: "0", left: "auto" }}>
                                     <li><Link className="dropdown-item" href="/profile">Profiles</Link></li>
@@ -72,29 +70,15 @@ export default function Header() {
                                 </Menu.Items>
                             </Menu>
 
-                            {/* Fourth Super Admin Dropdown */}
                             <Menu as="div" className="dropdown">
                                 <Menu.Button as="a" className="font-xs icon-down" style={{ display: 'flex', flexDirection: 'row' }}>
-                                   <span style={{ marginLeft: '5px',fontWeight: 'bold',fontSize: '16px'  }}>Candidates</span>
-                                </Menu.Button>
-                                <Menu.Items as="ul" className="dropdown-menu dropdown-menu-light dropdown-menu-end show" style={{ right: "0", left: "auto" }}>
-                                    <li><Link className="dropdown-item" href="/profile">Profiles</Link></li>
-                                    <li><Link className="dropdown-item" href="/my-resume">CV Manager</Link></li>
-                                    <li><Link className="dropdown-item" href="/login">Logout</Link></li>
-                                </Menu.Items>
-                            </Menu>
-
-                            {/* Fifth Super Admin Dropdown */}
-                            <Menu as="div" className="dropdown">
-                                <Menu.Button as="a" className="font-xs icon-down" style={{ display: 'flex', flexDirection: 'row' }}>
-                                    <span style={{ marginLeft: '5px',fontWeight: 'bold',fontSize: '16px'  }}>Pages</span>
+                                    <span style={{ marginLeft: '5px', fontWeight: 'bold', fontSize: '16px'  }}>Pages</span>
                                 </Menu.Button>
                                 <Menu.Items as="ul" className="dropdown-menu dropdown-menu-light dropdown-menu-end show" style={{ right: "0", left: "auto" }}>
                                     <li><Link className="dropdown-item" href="/profile">Blog</Link></li>
                                     <li><Link className="dropdown-item" href="/my-resume">Shop</Link></li>
                                     <li><Link className="dropdown-item" href="/login">About Us</Link></li>
                                     <li><Link className="dropdown-item" href="/login">Contacts</Link></li>
-                                    
                                 </Menu.Items>
                             </Menu>
                         </div>
@@ -126,11 +110,8 @@ export default function Header() {
                                                 <li><Link className="dropdown-item" href="/my-tasks-list">Job alerts</Link></li>
                                                 <li><Link className="dropdown-item" href="/candidates">Recruiters</Link></li>
                                                 <li><Link className="dropdown-item" href="/settings">Setting</Link></li>
-                                               
                                                 <li><Link className="dropdown-item" href="/authentication">Authentication</Link></li>
-                                            
                                                 <li><Link className="dropdown-item" href="/login">Logout</Link></li>
-
                                             </Menu.Items>
                                         </Menu>
                                     </div>
