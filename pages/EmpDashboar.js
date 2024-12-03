@@ -40,7 +40,7 @@ export default function empHome() {
                                     <div className="card-image"> <img src="assets/imgs/page/dashboard/lamp.svg" alt="jobBox" /></div>
                                     <div className="card-info">
                                         <div className="card-title">
-                                            <h3>8<span className="font-sm status up"></span>
+                                            <h3>9<span className="font-sm status up"></span>
                                             </h3>
                                         </div>
                                         <p className="color-text-paragraph-2">Total Views</p>
